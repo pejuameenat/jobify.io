@@ -2,6 +2,9 @@ import SearchIcon from '@mui/icons-material/Search'
 import CloudUploadIcon from '@mui/icons-material/CloudUpload'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline'
 import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined';
+import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined'
+import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined'
+import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined'
 export const navList = [
   { id: 1, list: 'Home' },
   { id: 2, list: 'About' },
@@ -47,24 +50,24 @@ export const steps = [
 export const help = [
   {
     id: 1,
-    img: '',
+    img: <MovingOutlinedIcon />,
     title: 'Enhance Your Career ',
     info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et doloremque assumenda quibusdam praesentium suscipit illo!',
-    bgColor: '',
+    bgColor: 'bg-red-700',
   },
   {
     id: 2,
-    img: '',
+    img: <TextsmsOutlinedIcon/>,
     title: 'Communicate With Others',
     info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et doloremque assumenda quibusdam praesentium suscipit illo!',
-    bgColor: '',
+    bgColor: 'bg-blue-700',
   },
   {
     id: 3,
-    img: '',
+    img: <AddTaskOutlinedIcon/>,
     title: 'Find jobs with good Career',
     info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et doloremque assumenda quibusdam praesentium suscipit illo!',
-    bgColor: '',
+    bgColor: 'bg-yellow-500',
   },
 ]
 

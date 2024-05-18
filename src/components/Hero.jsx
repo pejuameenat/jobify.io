@@ -2,7 +2,7 @@ import heroImage from '../assets/undraw_hero.svg'
 const Hero = () => {
   return (
     <section>
-      <div className="lg:flex items-center max-w-7xl w-11/12 mx-auto">
+      <div className="lg:flex items-center containerWidth">
         <header className="py-6 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl titleHead">
             Find Your <span className="text-orange-500">Dream Job </span>Now

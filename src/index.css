@@ -6,6 +6,9 @@
 .titleHead{
     @apply text-blue-950 font-bold
 }
+.containerWidth{
+    @apply max-w-7xl w-11/12 mx-auto
+}
 }
 *{
     margin: 0;
@@ -16,4 +19,6 @@
 body{
     padding: .5rem;
 }
- 
+ .spect{
+    border: 2px solid red;
+ }
