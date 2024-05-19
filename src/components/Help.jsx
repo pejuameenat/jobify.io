@@ -1,5 +1,5 @@
-import { useGLobalContext } from './context'
-import helpImg from './assets/undraw_support.svg'
+import { useGLobalContext } from '../context'
+import helpImg from '../assets/undraw_support.svg'
 const Help = () => {
   const { help } = useGLobalContext()
   return (

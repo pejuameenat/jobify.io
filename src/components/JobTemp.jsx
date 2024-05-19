@@ -1,4 +1,4 @@
-const JobTemp = ({cashIcon, title, likeIcon, icon, span, contact, locationIcon, location,  color, focus, borderColor }) => {
+const JobTemp = ({cashIcon, title, likeIcon, icon, span, contact, locationIcon, location,  color,borderColor }) => {
   return (
     <div
       className={`border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-gray-200`}
@@ -14,12 +14,15 @@ const JobTemp = ({cashIcon, title, likeIcon, icon, span, contact, locationIcon, 
         <span className="text-gray-400">{locationIcon}</span>
         <p className="">{location}</p>
       </div>
-      <button type="button" className={`likeButton rounded-full ${color} hover:${focus}`}>
+      <button
+        type="button"
+        className={`likeButton rounded-full ${color}`}
+      >
         {likeIcon}
       </button>
       <button
         type="button"
-        className={`likeButton ml-4 rounded-3xl w-32 ${color} hover:${focus}`}
+        className={`likeButton ml-4 rounded-3xl w-32 ${color} `}
       >
         Apply now
       </button>

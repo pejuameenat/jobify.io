@@ -1,5 +1,5 @@
 import { useGLobalContext } from '../context'
-import Step from '../Step'
+import Step from './Step'
 const Steps = () => {
   const { steps } = useGLobalContext()
   return (
@@ -14,7 +14,7 @@ const Steps = () => {
           are lorem ipsum dolor sit amet sit emet dolor valor..
         </p>
       </article>
-      <div className="containerWidth grid gap-4 lg:grid-cols-4 lg:gap-0">
+      <div className="containerWidth grid sm:grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-0">
         {steps.map((step) => (
           <Step key={step.id} {...step} />
         ))}

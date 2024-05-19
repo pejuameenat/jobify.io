@@ -1,12 +1,12 @@
-import manImage from '../src/assets/manpointing.png'
+import manImage from '../assets/manpointing.png'
 import { ToggleOff, ToggleOn } from '@mui/icons-material'
-import { useGLobalContext } from './context'
+import { useGLobalContext } from '../context'
 import JobTemp from './JobTemp'
 const Companies = () => {
   const { offers } = useGLobalContext()
   return (
     <section>
-      <div className="w-11/12 lg:w-9/12 mx-auto grid lg:grid-cols-2 gap-32 items-center">
+      <div className="w-11/12 lg:w-9/12 mx-auto grid gap-20 lg:grid-cols-2 lg:gap-32 items-center">
         <article className="text-center lg:text-left">
           <h3 className="titleHead text-3xl ">
             500+ World Top company Posted their jobs
@@ -16,7 +16,7 @@ const Companies = () => {
           </span>
           <button
             type="button"
-            className="animation block mx-auto bg-orange-600 p-2 my-4 shadow-lg shadow-orange-500 text-white rounded-lg font-medium lg:mx-0"
+            className="animation orangeButtons"
           >
             Start Now
           </button>

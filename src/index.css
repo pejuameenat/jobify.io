@@ -8,18 +8,23 @@
     }
 
     .containerWidth {
-        @apply max-w-7xl w-10/12 mx-auto
+        @apply max-w-7xl w-full mx-auto lg:w-10/12
     }
 
     .inputs {
-        @apply p-1 outline-0 rounded-sm focus:outline-1 focus:outline focus:outline-slate-300
+        @apply p-1 basis-2/5 outline-0 rounded-sm focus:outline-1 focus:outline focus:outline-slate-300
     }
-   .offerFlex{
-    @apply flex  items-center gap-3
-   }
-   .likeButton{
-    @apply text-white p-2 mt-3
-   }
+
+    .offerFlex {
+        @apply flex items-center gap-3
+    }
+
+    .likeButton {
+        @apply text-white p-2 mt-3 hover:opacity-50 transition duration-500
+    }
+    .orangeButtons{
+        @apply block mx-auto bg-orange-600 p-2 my-4 shadow-lg shadow-orange-500 text-white rounded-lg font-medium lg:mx-0
+    }
 }
 
 * {
@@ -47,6 +52,6 @@ body {
     }
 }
 
-.spect {
+/* .spect {
     border: 2px solid red;
-}
+} */
