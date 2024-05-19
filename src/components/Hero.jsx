@@ -14,14 +14,17 @@ const Hero = () => {
           </p>
           <form className="shadow-lg shadow-slate-200 bg-white rounded-2xl px-3 py-1 w-full h-12 flex text-sm items-center justify-between">
             <div>
-              <input placeholder="job title or keyword" />
+              <input placeholder="job title or keyword" className="inputs" />
             </div>
             <div>
-              <span>New York, USA.</span>
+              <input
+                placeholder="New York, USA."
+                className="inputs"
+              />
             </div>
             <button
               type="button"
-              className="w-1/5 bg-orange-500 text-white rounded-2xl p-1 shadow-md shadow-orange-200"
+              className="w-1/5 bg-orange-500 text-white rounded-2xl p-1 shadow-md shadow-orange-400"
             >
               Search
             </button>

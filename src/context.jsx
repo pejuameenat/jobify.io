@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react'
-import { navList, steps, help } from './data'
+import { navList, steps, help, offers} from './data'
 //create context
 const GLobalContext = createContext()
 
@@ -8,7 +8,7 @@ export const useGLobalContext = () => useContext(GLobalContext)
 const AppContext = ({ children }) => {
   const [nav, setNav] = useState(navList)
   return (
-    <GLobalContext.Provider value={{ nav, steps, help }}>{children}</GLobalContext.Provider>
+    <GLobalContext.Provider value={{ nav, steps, help, offers }}>{children}</GLobalContext.Provider>
   )
 }
 export default AppContext
