@@ -16,7 +16,7 @@ const TestimonySection = () => {
             <h3 className="titleHead text-3xl">
               Over 10,000+ Talented People Registered On Our Website
             </h3>
-            <p>
+            <p className="py-4">
               There are many variations of passages of services available but
               the majority have suffered alteration
             </p>
@@ -28,7 +28,7 @@ const TestimonySection = () => {
             </button>
           </article>
         </div>
-        <Testimonies/>
+        <Testimonies />
       </div>
     </section>
   )

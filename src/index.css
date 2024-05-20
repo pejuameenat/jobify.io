@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,11 +24,11 @@
     .likeButton {
         @apply text-white p-2 mt-3 hover:opacity-50 transition duration-500
     }
-    .orangeButtons{
+
+    .orangeButtons {
         @apply block mx-auto bg-orange-600 p-2 my-4 shadow-lg shadow-orange-500 text-white rounded-lg font-medium lg:mx-0
     }
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +38,7 @@
 
 body {
     padding: .5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .animation {

@@ -4,7 +4,7 @@ const Help = () => {
   const { help } = useGLobalContext()
   return (
     <section className="py-14">
-      <h3 className="titleHead text-center">
+      <h3 className="titleHead text-center text-2xl">
         We are always happy to help with anything!
       </h3>
       <div className="containerWidth lg:grid grid-cols-2 gap-10 items-center">

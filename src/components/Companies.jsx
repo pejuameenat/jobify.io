@@ -32,7 +32,7 @@ const Companies = () => {
       <h3 className="titleHead text-2xl text-center">
         Grab these exciting offers and apply now
       </h3>
-      <div className="w-1/6 mx-auto py-4 flex justify-between items-center">
+      <div className="w-2/6 lg:w-1/6 mx-auto py-4 flex justify-between items-center">
         <span className="titleHead text-center">Part Time</span>
         <button type="button">
           <ToggleOn sx={{ color: 'rgb(234 88 12)' }} />

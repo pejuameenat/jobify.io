@@ -6,6 +6,10 @@ import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined'
 import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined'
 import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined'
 import { Instagram, Google, Favorite, LocationOn, LocalAtm} from '@mui/icons-material'
+import img1 from './assets/team0.jpg'
+import img2 from './assets/team2.jpg'
+import img3 from './assets/team4.jpg'
+
 export const navList = [
   { id: 1, list: 'Home' },
   { id: 2, list: 'About' },
@@ -134,21 +138,21 @@ export const offers = [
 export const testimonies = [
   {
     id: 1,
-    img: '',
+    img: img1,
     name: 'Andrea Smith',
     span: 'One Year with Us',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, officia quia. Ipsa harum assumenda officiis.',
   },
   {
     id: 2,
-    img: '',
+    img: img2,
     name: 'Andrew Mole',
     span: 'One Year with Us',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, officia quia. Ipsa harum assumenda officiis.',
   },
   {
     id: 3,
-    img: '',
+    img: img3,
     name: 'Samantha chile',
     span: 'One Year with Us',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, officia quia. Ipsa harum assumenda officiis.',
