@@ -28,7 +28,11 @@
     .orangeButtons {
         @apply block mx-auto bg-orange-600 p-2 my-4 shadow-lg shadow-orange-500 text-white rounded-lg font-medium lg:mx-0
     }
+    .hoverState{
+        @apply hover:scale-110 duration-500 transition
+    }
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +58,19 @@ body {
         transform: scale(1.1);
     }
 }
-
+.navLink::before {
+    content: '';
+    position: absolute;
+    top:1.5rem;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ea580c;
+}
+.navLink:hover::before{
+    width: 100%;
+}
 /* .spect {
     border: 2px solid red;
 } */

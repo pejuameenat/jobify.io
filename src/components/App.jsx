@@ -1,4 +1,4 @@
-import Nav from './Nav '
+import Nav from './Nav'
 import Hero from './Hero'
 import Steps from './Steps'
 import Help from './Help'

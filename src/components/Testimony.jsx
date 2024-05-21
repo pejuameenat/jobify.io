@@ -1,6 +1,6 @@
 const Testimony = ({ img, span, name, info }) => {
   return (
-    <article className="shadow-lg p-3 text-center my-10 rounded-md">
+    <article className="shadow-lg p-3 text-center my-10 rounded-md hoverState">
       <img
         src={img}
         className="w-10 h-10 object-cover rounded-full block mx-auto"

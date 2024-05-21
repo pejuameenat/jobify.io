@@ -5,7 +5,14 @@ import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined'
 import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined'
 import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined'
 import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined'
-import { Instagram, Google, Favorite, LocationOn, LocalAtm} from '@mui/icons-material'
+import {
+  Instagram,
+  Google,
+  Favorite,
+  LocationOn,
+  LocalAtm,
+  ContactsTwoTone,
+} from '@mui/icons-material'
 import img1 from './assets/team0.jpg'
 import img2 from './assets/team2.jpg'
 import img3 from './assets/team4.jpg'
@@ -157,4 +164,11 @@ export const testimonies = [
     span: 'One Year with Us',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, officia quia. Ipsa harum assumenda officiis.',
   },
+]
+
+export const footerList = [
+  { id: 1, link: 'Home' },
+  { id: 1, link: 'About' },
+  { id: 1, link: 'Contact' },
+  { id: 1, link: 'Partners' },
 ]

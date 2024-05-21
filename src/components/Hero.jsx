@@ -12,7 +12,7 @@ const Hero = () => {
             Thousands of jobs here, find your new job today, new job postings
             today!
           </p>
-          <form className="w-full h-12 shadow-lg shadow-slate-200 bg-white rounded-2xl px-2 py-1 flex gap-5 text-sm items-center">
+          <form className="w-full h-12 shadow-lg shadow-slate-200 bg-white rounded-3xl px-2 py-1 flex gap-5 text-sm items-center justify-between">
             <div>
               <input placeholder="job title or keyword" className="inputs" />
             </div>
