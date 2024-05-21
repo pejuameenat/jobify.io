@@ -1,15 +1,17 @@
+import { FaBars } from 'react-icons/fa'
 import { useGLobalContext } from '../context'
 const Nav = () => {
   const { nav } = useGLobalContext()
   return (
-    <nav className="p-3 flex flex-col lg:justify-between lg:items-center">
-      <div className='flex justify-between'>
-        <a href="#home" className="titleHead text-3xl">
+    <nav className="p-3 flex gap-20 flex-col justify-between lg:items-center lg:flex-row">
+      <div className="flex justify-between ">
+        <a href="#home" className="titleHead text-4xl">
           Jobi<span className="text-orange-600">fy</span>
         </a>
-        {/* meu */}
+        <FaBars className="lg:hidden" />
       </div>
-      <div className="hidden flex flex-col gap-4 lg:flex-row items-center flex-grow-1">
+      {/* nav center */}
+      <div className="hidden lg:flex gap-4 lg:flex-row items-center grow">
         {nav.map((item) => (
           <li key={item.id} className="">
             <a
@@ -20,7 +22,7 @@ const Nav = () => {
             </a>
           </li>
         ))}
-        <button type="button" className="orangeButtons">
+        <button type="button" className="orangeButtons ml-auto hoverState">
           Login
         </button>
       </div>

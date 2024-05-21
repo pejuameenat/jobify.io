@@ -71,6 +71,6 @@ body {
 .navLink:hover::before{
     width: 100%;
 }
-/* .spect {
+.spect {
     border: 2px solid red;
-} */
+}

@@ -6,18 +6,15 @@ const Companies = () => {
   const { offers } = useGLobalContext()
   return (
     <section>
-      <div className="w-11/12 lg:w-9/12 mx-auto grid gap-20 lg:grid-cols-2 lg:gap-32 items-center">
+      <div className="w-11/12 lg:w-2/3 mx-auto grid gap-20 lg:grid-cols-2 lg:gap-32 items-center">
         <article className="text-center lg:text-left">
           <h3 className="titleHead text-3xl ">
             500+ World Top company Posted their jobs
           </h3>
-          <span className="font-light text-sm py-2">
+          <span className="font-light text-md py-2">
             Ready to join other teams of developers to create magic?
           </span>
-          <button
-            type="button"
-            className="animation orangeButtons"
-          >
+          <button type="button" className="animation orangeButtons">
             Start Now
           </button>
         </article>

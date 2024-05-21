@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
             <button
               type="button"
-              className="w-1/5 bg-orange-500 text-white rounded-2xl p-1 shadow-md shadow-orange-400"
+              className="w-1/5 bg-orange-500 text-white rounded-2xl p-1 shadow-md shadow-orange-400 hover:opacity-80 transition duration-500"
             >
               Search
             </button>
