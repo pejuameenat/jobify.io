@@ -11,18 +11,17 @@ import {
   Favorite,
   LocationOn,
   LocalAtm,
-  ContactsTwoTone,
 } from '@mui/icons-material'
 import img1 from './assets/team0.jpg'
 import img2 from './assets/team2.jpg'
 import img3 from './assets/team4.jpg'
 
 export const navList = [
-  { id: 1, list: 'Home' },
-  { id: 2, list: 'About' },
-  { id: 3, list: 'Contact' },
-  { id: 4, list: 'Category' },
-  { id: 5, list: 'Post a job' },
+  { id: 1, list: 'Home', href: '#home' },
+  { id: 2, list: 'About', href: '#about' },
+  { id: 3, list: 'Contact', href: '#help' },
+  { id: 4, list: 'Category', href: '#category' },
+  { id: 5, list: 'Post a job', href: '#Post a job' },
 ]
 
 export const steps = [
@@ -93,8 +92,6 @@ export const offers = [
     contact: '123-456-789-0 /Monthly',
     locationIcon: <LocationOn />,
     location: 'Uk, London',
-    likeIcon: <Favorite />,
-    // apply: 'Apply now',
     color: 'bg-orange-600',
     borderColor: 'border-orange-400',
   },
@@ -107,8 +104,6 @@ export const offers = [
     contact: '123-456-789-0 /Monthly',
     locationIcon: <LocationOn />,
     location: 'Liberia, Mauritius.',
-    likeIcon: <Favorite />,
-    // apply: 'Apply now',
     color: 'bg-violet-700',
     borderColor: 'border-violet-500',
   },
@@ -121,8 +116,6 @@ export const offers = [
     contact: '123-456-789-0 /Monthly',
     locationIcon: <LocationOn />,
     location: 'USA, Texas',
-    likeIcon: <Favorite />,
-    // apply: 'Apply now',
     color: 'bg-yellow-400',
     borderColor: 'border-yellow-400',
   },
@@ -135,8 +128,6 @@ export const offers = [
     contact: '123-456-789-0 /Monthly',
     locationIcon: <LocationOn />,
     location: 'Pakistan, Bangladesh',
-    likeIcon: <Favorite />,
-    // apply: 'Apply now',
     color: 'bg-blue-700',
     borderColor: 'border-blue-500',
   },
@@ -166,9 +157,28 @@ export const testimonies = [
   },
 ]
 
-export const footerList = [
-  { id: 1, link: 'Home' },
-  { id: 1, link: 'About' },
-  { id: 1, link: 'Contact' },
-  { id: 1, link: 'Partners' },
-]
+ export const footerList = [
+   {
+     id: 1,
+     h5: 'ABOUT US',
+     list1: 'Media Center',
+     list2: 'Career',
+     list3: 'Investors',
+     list4: 'Policies',
+   },
+   {
+     id: 2,
+     h5: 'NEED HELP?',
+     list1: 'FAQ',
+     list2: 'Contact Us',
+     list3: 'International',
+   },
+   {
+     id: 3,
+     h5: 'California Notice at Collection',
+     list1: 'Do Not Sell My Personal Information',
+     list2: 'Terms of Use',
+     list3: 'Privacy Policy',
+     list4: 'Cookies Settings',
+   },
+ ]

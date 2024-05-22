@@ -1,7 +1,7 @@
 import heroImage from '../assets/undraw_hero.svg'
 const Hero = () => {
   return (
-    <section>
+    <section id="home">
       <div className="lg:flex items-center containerWidth">
         <header className="py-6 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl titleHead">
@@ -12,7 +12,7 @@ const Hero = () => {
             Thousands of jobs here, find your new job today, new job postings
             today!
           </p>
-          <form className="w-full h-12 shadow-lg shadow-slate-200 bg-white rounded-3xl px-2 py-1 flex gap-5 text-sm items-center justify-between">
+          <form className="w-full lg:h-12 gap-4 shadow-lg shadow-slate-200 bg-white py-2 rounded-md lg:rounded-2xl px-2 text-sm grid grid-cols-1 lg:grid-cols-3 items-center">
             <div>
               <input placeholder="job title or keyword" className="inputs" />
             </div>
@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
             <button
               type="button"
-              className="w-1/5 bg-orange-500 text-white rounded-2xl p-1 shadow-md shadow-orange-400 hover:opacity-80 transition duration-500"
+              className=" bg-orange-500 text-white rounded-lg p-1 shadow-md shadow-orange-400 hover:opacity-80 transition duration-500"
             >
               Search
             </button>

@@ -3,13 +3,13 @@ import helpImg from '../assets/undraw_support.svg'
 const Help = () => {
   const { help } = useGLobalContext()
   return (
-    <section className="py-14">
+    <section className="py-14" id="help">
       <h3 className="titleHead text-center text-2xl">
         We are always happy to help with anything!
       </h3>
       <div className="containerWidth lg:grid grid-cols-2 gap-10 items-center">
         <img src={helpImg} className="max-w-full" alt="" />
-        <article className="max-w-3xl mx-auto py-16">
+        <article className="max-w-3xl mx-auto py-16 px-4">
           <div className="py-5">
             {help.map((item) => (
               <div key={item.id} className="flex gap-5 items-center">

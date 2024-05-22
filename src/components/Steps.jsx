@@ -3,7 +3,7 @@ import Step from './Step'
 const Steps = () => {
   const { steps } = useGLobalContext()
   return (
-    <section>
+    <section id="about">
       <article className="text-center py-8 max-w-3xl mx-auto">
         <span className="text-orange-500 text-xs font-semibold">
           How it Works

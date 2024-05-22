@@ -1,4 +1,19 @@
-const JobTemp = ({cashIcon, title, likeIcon, icon, span, contact, locationIcon, location,  color,borderColor }) => {
+import { Favorite } from '@mui/icons-material'
+import { useGLobalContext } from '../context'
+
+const JobTemp = ({
+  id,
+  cashIcon,
+  title,
+  icon,
+  span,
+  contact,
+  locationIcon,
+  location,
+  color,
+  borderColor,
+}) => {
+  const { like, toggleLike, currentItem } = useGLobalContext()
   return (
     <div
       className={`border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-gray-200`}
@@ -16,16 +31,28 @@ const JobTemp = ({cashIcon, title, likeIcon, icon, span, contact, locationIcon, 
       </div>
       <button
         type="button"
-        className={`likeButton rounded-full ${color}`}
+        className={` text-white p-2 mt-3 rounded-full ${color}`}
+        onClick={() => toggleLike(id)}
       >
-        {likeIcon}
+        <Favorite
+          sx={{ color: like && id === currentItem ? '#be185d' : '#fafafa' }}
+        />
       </button>
       <button
         type="button"
-        className={`likeButton ml-4 rounded-3xl w-32 ${color} `}
+        className={`likeButton  ml-4 rounded-3xl w-32 ${color} `}
       >
         Apply now
       </button>
+      <em
+        className={
+          like && id === currentItem
+            ? 'block opacity-100 mt-1 bg-slate-400 w-fit h-6 px-1 rounded-md text-white duration-500 transition'
+            : 'opacity-0'
+        }
+      >
+        Saved!
+      </em>
     </div>
   )
 }

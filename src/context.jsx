@@ -1,14 +1,33 @@
 import { createContext, useContext, useState } from 'react'
-import { navList, steps, help, offers, testimonies} from './data'
+import { navList, steps, help, offers, testimonies, footerList } from './data'
 //create context
 const GLobalContext = createContext()
 
 //create custom hook and invoke useContext hook
 export const useGLobalContext = () => useContext(GLobalContext)
 const AppContext = ({ children }) => {
-  const [nav, setNav] = useState(navList)
+  const [like, setLike] = useState(false)
+  const [schedule, setSchedule] = useState(false)
+  const [currentItem, setCurrentItem] = useState(0)
+  const toggleLike = (id) => {
+    id!==currentItem? setCurrentItem(id):setLike((prev) => !prev)  
+  }
+    
   return (
-    <GLobalContext.Provider value={{ nav, steps, help, offers, testimonies }}>
+    <GLobalContext.Provider
+      value={{
+        navList,
+        steps,
+        help,
+        offers,
+        testimonies,
+        footerList,
+        like,
+        toggleLike,
+        currentItem,
+        schedule, setSchedule
+      }}
+    >
       {children}
     </GLobalContext.Provider>
   )

@@ -3,16 +3,17 @@ import { ToggleOff, ToggleOn } from '@mui/icons-material'
 import { useGLobalContext } from '../context'
 import JobTemp from './JobTemp'
 const Companies = () => {
-  const { offers } = useGLobalContext()
+  const { offers,schedule, setSchedule } = useGLobalContext()
   return (
     <section>
-      <div className="w-11/12 lg:w-2/3 mx-auto grid gap-20 lg:grid-cols-2 lg:gap-32 items-center">
+      <div className="w-11/12 lg:w-9/12 mx-auto flex flex-col justify-between gap-20 items-center lg:flex-row lg:gap-0 ">
         <article className="text-center lg:text-left">
           <h3 className="titleHead text-3xl ">
             500+ World Top company Posted their jobs
           </h3>
-          <span className="font-light text-md py-2">
-            Ready to join other teams of developers to create magic?
+          <span className="font-light text-md py-3">
+            Are you ready to follow our lead to join other teams of developers
+            to create magic?
           </span>
           <button type="button" className="animation orangeButtons">
             Start Now
@@ -31,8 +32,15 @@ const Companies = () => {
       </h3>
       <div className="w-2/6 lg:w-1/6 mx-auto py-4 flex justify-between items-center">
         <span className="titleHead text-center">Part Time</span>
-        <button type="button">
-          <ToggleOn sx={{ color: 'rgb(234 88 12)' }} />
+        <button
+          type="button"
+          onClick={() => setSchedule((prevSchedule) => !prevSchedule)}
+        >
+          {schedule ? (
+            <ToggleOn sx={{ color: '#ea580c' }} />
+          ) : (
+            <ToggleOff sx={{ color: '#172554' }} />
+          )}
         </button>
         <span className="text-center text-orange-600 font-semibold">
           Full Time
