@@ -9,6 +9,7 @@ const AppContext = ({ children }) => {
   const [like, setLike] = useState(false)
   const [schedule, setSchedule] = useState(false)
   const [currentItem, setCurrentItem] = useState(0)
+  const [showModal, setShowModal] = useState(false)
   const toggleLike = (id) => {
     id!==currentItem? setCurrentItem(id):setLike((prev) => !prev)  
   }
@@ -25,7 +26,8 @@ const AppContext = ({ children }) => {
         like,
         toggleLike,
         currentItem,
-        schedule, setSchedule
+        schedule, setSchedule,
+        showModal, setShowModal
       }}
     >
       {children}

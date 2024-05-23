@@ -5,6 +5,7 @@ import Help from './Help'
 import Companies from './Companies'
 import TestimonySection from './TestimonySection'
 import Footer from './Footer'
+import Modal from './Modal'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Help />
         <Companies />
         <TestimonySection />
+        <Modal/>
         <Footer />
       </main>
     </div>

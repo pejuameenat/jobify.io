@@ -1,7 +1,7 @@
 import { FaBars } from 'react-icons/fa'
 import { useGLobalContext } from '../context'
 const Nav = () => {
-  const { navList } = useGLobalContext()
+  const { navList, setShowModal } = useGLobalContext()
   return (
     <nav className="p-3 flex lg:gap-20 flex-col justify-between lg:items-center lg:flex-row">
       <div className="flex justify-between ">
@@ -25,6 +25,7 @@ const Nav = () => {
         <button
           type="button"
           className="orangeButtons float-left lg:ml-auto hoverState"
+          onClick={()=>setShowModal(true)}
         >
           Login
         </button>
