@@ -3,7 +3,7 @@ import { ToggleOff, ToggleOn } from '@mui/icons-material'
 import { useGLobalContext } from '../context'
 import JobTemp from './JobTemp'
 const Companies = () => {
-  const { offers,schedule, setSchedule } = useGLobalContext()
+  const { offerFullTime, offerPartTime,schedule, setSchedule } = useGLobalContext()
   return (
     <section>
       <div className="w-11/12 lg:w-9/12 mx-auto flex flex-col justify-between gap-20 items-center lg:flex-row lg:gap-0 ">
@@ -46,11 +46,19 @@ const Companies = () => {
           Full Time
         </span>
       </div>
-      <div className="containerWidth grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {offers.map((item) => (
-          <JobTemp key={item.id} {...item} />
-        ))}
-      </div>
+      {schedule ? (
+        <div className="containerWidth grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {offerFullTime.map((item) => (
+            <JobTemp key={item.id} {...item} />
+          ))}
+        </div>
+      ) : (
+        <div className="containerWidth grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {offerPartTime.map((item) => (
+            <JobTemp key={item.id} {...item} />
+          ))}
+        </div>
+      )}
     </section>
   )
 }

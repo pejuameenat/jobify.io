@@ -82,7 +82,7 @@ export const help = [
   },
 ]
 
-export const offers = [
+export const offerFullTime = [
   {
     id: 1,
     icon: <Google />,
@@ -135,8 +135,11 @@ export const offers = [
     schedule: 'part time',
     borderColor: 'border-blue-500',
   },
+]
+export const offerPartTime= [
+
   {
-    id: 5,
+    id: 1,
     icon: '',
     title: 'Web Developer',
     span: 'ACD Limited',
@@ -149,7 +152,7 @@ export const offers = [
     borderColor: 'border-yellow-500',
   },
   {
-    id: 6,
+    id: 2,
     icon: '',
     title: 'Web Developer',
     span: 'ACD Limited',
@@ -162,7 +165,7 @@ export const offers = [
     borderColor: 'border-violet-500',
   },
   {
-    id: 7,
+    id: 3,
     icon: '',
     title: 'Web Developer',
     span: 'ACD Limited',
@@ -175,7 +178,7 @@ export const offers = [
     borderColor: 'border-blue-500',
   },
   {
-    id: 8,
+    id: 4,
     icon: '',
     title: 'Web Developer',
     span: 'ACD Limited',
@@ -188,6 +191,7 @@ export const offers = [
     borderColor: 'border-orange-500',
   },
 ]
+
 
 export const testimonies = [
   {

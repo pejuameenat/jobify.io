@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react'
-import { navList, steps, help, offers, testimonies, footerList } from './data'
+import { navList, steps, help, offerFullTime, offerPartTime, testimonies, footerList } from './data'
 //create context
 const GLobalContext = createContext()
 
@@ -11,10 +11,8 @@ const AppContext = ({ children }) => {
   const [currentItem, setCurrentItem] = useState(0)
   const [showModal, setShowModal] = useState(false)
   const toggleLike = (id) => {
-    id!==currentItem? setCurrentItem(id):setLike((prev) => !prev) 
-    // return offers.filter((item) =>
-    //   // schedule ? item.schedule === 'full time' : item.schedule === 'part time'
-    // ) 
+    id !==currentItem? setCurrentItem(id):setLike((prev) => !prev) 
+     
   }
     
   return (
@@ -23,7 +21,8 @@ const AppContext = ({ children }) => {
         navList,
         steps,
         help,
-        offers,
+        offerFullTime,
+        offerPartTime,
         testimonies,
         footerList,
         like,
