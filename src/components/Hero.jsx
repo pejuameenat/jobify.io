@@ -1,3 +1,4 @@
+import InputBuilder from './InputBuilder'
 import heroImage from '../assets/undraw_hero.svg'
 const Hero = () => {
   return (
@@ -13,12 +14,8 @@ const Hero = () => {
             today!
           </p>
           <form className="w-full lg:h-12 gap-4 shadow-lg shadow-slate-200 bg-white py-2 rounded-md lg:rounded-2xl px-2 text-sm grid grid-cols-1 lg:grid-cols-3 items-center">
-            <div>
-              <input placeholder="job title or keyword" className="inputs" />
-            </div>
-            <div>
-              <input placeholder="New York, USA." className="inputs" />
-            </div>
+            <InputBuilder property="job title or keyword" />
+            <InputBuilder property="New York, USA." />
             <button
               type="button"
               className=" bg-orange-500 text-white rounded-lg p-1 shadow-md shadow-orange-400 hover:opacity-80 transition duration-500"
@@ -27,7 +24,11 @@ const Hero = () => {
             </button>
           </form>
         </header>
-        <img src={heroImage} className="max-w-full w-1/2 m-auto" alt="" />
+        <img
+          src={heroImage}
+          className="max-w-full w-1/2 m-auto"
+          alt="a woman thinking of how to get jobs to apply to"
+        />
       </div>
     </section>
   )

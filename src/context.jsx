@@ -11,7 +11,10 @@ const AppContext = ({ children }) => {
   const [currentItem, setCurrentItem] = useState(0)
   const [showModal, setShowModal] = useState(false)
   const toggleLike = (id) => {
-    id!==currentItem? setCurrentItem(id):setLike((prev) => !prev)  
+    id!==currentItem? setCurrentItem(id):setLike((prev) => !prev) 
+    // return offers.filter((item) =>
+    //   // schedule ? item.schedule === 'full time' : item.schedule === 'part time'
+    // ) 
   }
     
   return (
