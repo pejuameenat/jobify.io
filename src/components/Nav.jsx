@@ -1,14 +1,16 @@
 import { FaBars } from 'react-icons/fa'
 import { useGLobalContext } from '../context'
 const Nav = () => {
-  const { navList, setShowModal } = useGLobalContext()
+  const { navList, setShowModal, setMenuBar } = useGLobalContext()
   return (
     <nav className="p-3 flex lg:gap-20 flex-col justify-between lg:items-center lg:flex-row">
       <div className="flex justify-between ">
         <a href="#home" className="titleHead text-4xl">
           Jobi<span className="text-orange-600">fy</span>
         </a>
-        <FaBars className="lg:hidden" />
+        <button type="button" onClick={()=>setMenuBar(prevState=> !prevState)}>
+          <FaBars className="lg:hidden" />
+        </button>
       </div>
       {/* nav center  hidden absolute top-14 w-full relative */}
       <div className="p-4 bg-white lg:bg-transparent sm:shadow-xl lg:shadow-none lg:flex gap-4 lg:flex-row items-center grow">
@@ -25,7 +27,7 @@ const Nav = () => {
         <button
           type="button"
           className="orangeButtons float-left lg:ml-auto hoverState"
-          onClick={()=>setShowModal(true)}
+          onClick={() => setShowModal(true)}
         >
           Login
         </button>

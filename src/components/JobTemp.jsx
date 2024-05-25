@@ -12,6 +12,7 @@ const JobTemp = ({
   location,
   color,
   borderColor,
+  schedule
 }) => {
   const { like, toggleLike, currentItem } = useGLobalContext()
   return (
@@ -21,6 +22,7 @@ const JobTemp = ({
       <span className="block text-center">{icon}</span>
       <h4 className="titleHead text-center">{title}</h4>
       <em className="block text-center text-sm">{span}</em>
+      <span className="block text-center text-sm">{schedule}</span>
       <div className="offerFlex py-2">
         <span className="text-gray-400">{cashIcon}</span>
         <p>{contact}</p>

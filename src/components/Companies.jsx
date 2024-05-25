@@ -37,7 +37,7 @@ const Companies = () => {
           onClick={() => setSchedule((prevSchedule) => !prevSchedule)}
         >
           {schedule ? (
-            <ToggleOn sx={{ color: '#ea580c' }} />
+            <ToggleOn sx={{ color: '#ea580c', }} />
           ) : (
             <ToggleOff sx={{ color: '#172554' }} />
           )}
