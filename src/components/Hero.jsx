@@ -14,8 +14,8 @@ const Hero = () => {
             today!
           </p>
           <form className="w-full lg:h-12 gap-4 shadow-lg shadow-slate-200 bg-white py-2 rounded-md lg:rounded-2xl px-2 text-sm grid grid-cols-1 lg:grid-cols-3 items-center">
-            <InputBuilder property="job title or keyword" />
-            <InputBuilder property="New York, USA." />
+            <InputBuilder property="Job title or keyword" />
+            <InputBuilder property="Region e.g New York, USA." />
             <button
               type="button"
               className=" bg-orange-500 text-white rounded-lg p-1 shadow-md shadow-orange-400 hover:opacity-80 transition duration-500"

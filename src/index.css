@@ -22,19 +22,21 @@
     }
 
     .likeButton {
-        @apply text-white p-2 mt-3 hover:opacity-50 transition duration-500
+        @apply text-white p-2 mt-3 hover:opacity-50 smoothTransition
     }
 
     .orangeButtons {
         @apply block mx-auto bg-orange-600 p-2 my-4 shadow-lg shadow-orange-500 text-white rounded-lg font-medium lg:mx-0 w-28
     }
-
+    .smoothTransition{
+    @apply duration-500 transition
+    }
     .hoverState {
-        @apply hover:scale-110 duration-500 transition
+        @apply hover:scale-110 smoothTransition
     }
 
     .list-elements {
-        @apply pt-4 transition ease-in duration-500 hover:underline
+        @apply pt-4 smoothTransition ease-in hover:underline
     }
 
     .modal-inputs {
@@ -80,6 +82,7 @@ body {
     width: 0%;
     height: 3px;
     background-color: #ea580c;
+    transition: 250ms ease-in;
 }
 
 .navLink:hover::before {
