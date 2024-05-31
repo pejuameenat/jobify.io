@@ -1,11 +1,17 @@
-import manImage from '../assets/manpointing.png'
+import manImage from '../../assets/manpointing.png'
 import { ToggleOff, ToggleOn } from '@mui/icons-material'
-import { useGLobalContext } from '../context'
+import { useGLobalContext } from '../../context'
 import JobTemp from './JobTemp'
 const Companies = () => {
-  const { offerFullTime, offerPartTime,schedule, setSchedule } = useGLobalContext()
+  const {
+    offerFullTime,
+    offerPartTime,
+    schedule,
+    setSchedule,
+    modalFunc,
+  } = useGLobalContext()
   return (
-    <section>
+    <section id='category'>
       <div className="w-11/12 lg:w-9/12 mx-auto flex flex-col justify-between gap-20 items-center lg:flex-row lg:gap-0 ">
         <article className="text-center lg:text-left">
           <h3 className="titleHead text-3xl ">
@@ -15,7 +21,7 @@ const Companies = () => {
             Are you ready to follow our lead to join other teams of developers
             to create magic?
           </span>
-          <button type="button" className="animation orangeButtons">
+          <button type="button" className="animation orangeButtons" onClick={modalFunc}>
             Start Now
           </button>
         </article>
@@ -37,7 +43,7 @@ const Companies = () => {
           onClick={() => setSchedule((prevSchedule) => !prevSchedule)}
         >
           {schedule ? (
-            <ToggleOn sx={{ color: '#ea580c', }} />
+            <ToggleOn sx={{ color: '#ea580c' }} />
           ) : (
             <ToggleOff sx={{ color: '#172554' }} />
           )}

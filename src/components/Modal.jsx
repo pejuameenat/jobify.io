@@ -6,7 +6,7 @@ const Modal = () => {
     <section
       className={showModal ? 'fixed inset-y-0 inset-x-0 overlay' : 'hidden'}
     >
-      <div className="  bg-slate-100 max-w-xl p-5 mx-auto relative inset-y-14 duration-500 transition">
+      <div className="rounded-sm  bg-slate-100 max-w-xl p-5 mx-auto relative inset-y-14 smoothTransition">
         <button
           className="float-right text-xl"
           onClick={() => setShowModal(false)}

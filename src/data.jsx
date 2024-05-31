@@ -8,7 +8,7 @@ import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined'
 import {
   Instagram,
   Google,
-  Favorite,
+  // Favorite,
   LocationOn,
   LocalAtm,
 } from '@mui/icons-material'
@@ -21,17 +21,17 @@ export const navList = [
   { id: 2, list: 'About', href: '#about' },
   { id: 3, list: 'Contact', href: '#help' },
   { id: 4, list: 'Category', href: '#category' },
-  { id: 5, list: 'Post a job', href: '#Post a job' },
+  { id: 5, list: 'Post a job', href: '#post a job' },
 ]
 
 export const steps = [
   {
     id: 1,
-    img: <SearchIcon />,
-    title: 'Search Job',
-    info: 'First you have to search job here',
-    color: 'text-blue-700',
-    radiusColor: 'border-blue-700',
+    img: <PersonOutlineIcon />,
+    title: 'Create Account',
+    info: 'First you have to create account here',
+    color: 'text-yellow-400',
+    radiusColor: 'border-yellow-400',
   },
   {
     id: 2,
@@ -43,11 +43,11 @@ export const steps = [
   },
   {
     id: 3,
-    img: <PersonOutlineIcon />,
-    title: 'Create Account',
-    info: 'First you have to create account here',
-    color: 'text-yellow-400',
-    radiusColor: 'border-yellow-400',
+    img: <SearchIcon />,
+    title: 'Search Job',
+    info: 'First you have to search job here',
+    color: 'text-blue-700',
+    radiusColor: 'border-blue-700',
   },
   {
     id: 4,

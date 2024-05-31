@@ -1,8 +1,8 @@
-import { useGLobalContext } from "../context"
-import Testimony from "./Testimony"
+import { useGLobalContext } from '../context'
+import Testimony from './Testimony'
 
 const Testimonies = () => {
-    const {testimonies} = useGLobalContext()
+  const { testimonies } = useGLobalContext()
   return (
     <section className="py-20">
       <h3 className="titleHead text-center text-2xl">

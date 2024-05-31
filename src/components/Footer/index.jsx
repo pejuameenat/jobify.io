@@ -1,4 +1,4 @@
-import { useGLobalContext } from '../context'
+import { useGLobalContext } from '../../context'
 import FooterTemp from './FooterTemp'
 const Footer = () => {
   const { footerList } = useGLobalContext()

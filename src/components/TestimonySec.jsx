@@ -2,7 +2,7 @@ import womanSmiling from '../assets/womansmiling.jpg'
 import Testimonies from './Testimonies'
 const TestimonySection = () => {
   return (
-    <section>
+    <section id="post a job">
       <div className="containerWidth py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-5 items-center">
           <div className=" w-96 h-80 p-3 mx-auto border border-orange-300 rounded-lg">

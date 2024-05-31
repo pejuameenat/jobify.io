@@ -1,5 +1,13 @@
 import { createContext, useContext, useState } from 'react'
-import { navList, steps, help, offerFullTime, offerPartTime, testimonies, footerList } from './data'
+import {
+  navList,
+  steps,
+  help,
+  offerFullTime,
+  offerPartTime,
+  testimonies,
+  footerList,
+} from './data'
 //create context
 const GLobalContext = createContext()
 
@@ -11,11 +19,12 @@ const AppContext = ({ children }) => {
   const [currentItem, setCurrentItem] = useState(0)
   const [showModal, setShowModal] = useState(false)
   const [menuBar, setMenuBar] = useState(false)
+  const [mode, setMode] = useState(props.mode)
+
   const toggleLike = (id) => {
-    id !==currentItem? setCurrentItem(id):setLike((prev) => !prev) 
-     
+    id !== currentItem ? setCurrentItem(id) : setLike((prev) => !prev)
   }
-    
+  const modalFunc = () => setShowModal(true)
   return (
     <GLobalContext.Provider
       value={{
@@ -32,9 +41,11 @@ const AppContext = ({ children }) => {
         schedule,
         setSchedule,
         showModal,
-        setShowModal,
+        modalFunc,
         menuBar,
         setMenuBar,
+        mode,
+        setMode,
       }}
     >
       {children}

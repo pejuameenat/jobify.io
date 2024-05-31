@@ -1,15 +1,21 @@
 import Nav from './Nav'
-import Hero from './Hero'
+import { Hero, Help } from './Pages'
 import Steps from './Steps'
-import Help from './Help'
-import Companies from './Companies'
-import TestimonySection from './TestimonySection'
+import Companies from './JobCategory'
+import TestimonySection from './TestimonySec'
 import Footer from './Footer'
 import Modal from './Modal'
 
-const App = () => {
+const App = (props) => {
+  console.log(props);
   return (
-    <div className="app bg-gradient-to-r from-orange-50 from-5% via-neutral-100 to-neutral-50">
+    <div
+      className={
+        
+          // 'text-white  bg-gradient-to-r from-blue-950 from-5% to-neutral-950 via-blue-950 '
+           'app bg-gradient-to-r from-orange-50 from-5% via-neutral-100 to-neutral-50'
+      }
+    >
       <Nav />
       <main>
         <Hero />
@@ -17,7 +23,7 @@ const App = () => {
         <Help />
         <Companies />
         <TestimonySection />
-        <Modal/>
+        <Modal />
         <Footer />
       </main>
     </div>

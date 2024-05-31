@@ -1,5 +1,5 @@
 import InputBuilder from './InputBuilder'
-import heroImage from '../assets/undraw_hero.svg'
+import heroImage from '../../assets/undraw_hero.svg'
 const Hero = () => {
   return (
     <section id="home">

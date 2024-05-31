@@ -1,5 +1,5 @@
 import { Favorite } from '@mui/icons-material'
-import { useGLobalContext } from '../context'
+import { useGLobalContext } from '../../context'
 
 const JobTemp = ({
   id,
@@ -12,7 +12,7 @@ const JobTemp = ({
   location,
   color,
   borderColor,
-  schedule
+  schedule,
 }) => {
   const { like, toggleLike, currentItem } = useGLobalContext()
   return (
