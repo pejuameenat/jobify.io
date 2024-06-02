@@ -14,10 +14,14 @@ const JobTemp = ({
   borderColor,
   schedule,
 }) => {
-  const { like, toggleLike, currentItem } = useGLobalContext()
+  const { like, toggleLike, currentItem, mode } = useGLobalContext()
   return (
     <div
-      className={`border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-gray-200`}
+      className={
+        mode
+          ? `border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-slate-800`
+          : `border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-gray-200`
+      }
     >
       <span className="block text-center">{icon}</span>
       <h4 className="titleHead text-center">{title}</h4>

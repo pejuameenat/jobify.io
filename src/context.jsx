@@ -19,12 +19,14 @@ const AppContext = ({ children }) => {
   const [currentItem, setCurrentItem] = useState(0)
   const [showModal, setShowModal] = useState(false)
   const [menuBar, setMenuBar] = useState(false)
-  const [mode, setMode] = useState(props.mode)
+  const [mode, setMode] = useState(false)
 
   const toggleLike = (id) => {
     id !== currentItem ? setCurrentItem(id) : setLike((prev) => !prev)
   }
-  const modalFunc = () => setShowModal(true)
+  const openModalFunc = () => setShowModal(true)
+  const closeModalFunc = () => setShowModal(false)
+
   return (
     <GLobalContext.Provider
       value={{
@@ -41,7 +43,8 @@ const AppContext = ({ children }) => {
         schedule,
         setSchedule,
         showModal,
-        modalFunc,
+        openModalFunc,
+        closeModalFunc,
         menuBar,
         setMenuBar,
         mode,

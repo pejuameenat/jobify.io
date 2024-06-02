@@ -8,10 +8,11 @@ const Companies = () => {
     offerPartTime,
     schedule,
     setSchedule,
-    modalFunc,
+    openModalFunc,
+    mode,
   } = useGLobalContext()
   return (
-    <section id='category'>
+    <section id="category">
       <div className="w-11/12 lg:w-9/12 mx-auto flex flex-col justify-between gap-20 items-center lg:flex-row lg:gap-0 ">
         <article className="text-center lg:text-left">
           <h3 className="titleHead text-3xl ">
@@ -21,7 +22,11 @@ const Companies = () => {
             Are you ready to follow our lead to join other teams of developers
             to create magic?
           </span>
-          <button type="button" className="animation orangeButtons" onClick={modalFunc}>
+          <button
+            type="button"
+            className="animation orangeButtons"
+            onClick={openModalFunc}
+          >
             Start Now
           </button>
         </article>
@@ -29,7 +34,7 @@ const Companies = () => {
           <img
             src={manImage}
             className="w-full h-full object-cover absolute bottom-20 inset-x-4"
-            alt="man pointing up"
+            alt="image of a man pointing up"
           />
         </div>
       </div>
@@ -37,7 +42,7 @@ const Companies = () => {
         Grab these exciting offers and apply now
       </h3>
       <div className="w-2/6 lg:w-1/6 mx-auto py-4 flex justify-between items-center">
-        <span className="titleHead text-center">Part Time</span>
+        <span className={mode ? 'text-slate-50' : 'titleHead'}>Part Time</span>
         <button
           type="button"
           onClick={() => setSchedule((prevSchedule) => !prevSchedule)}

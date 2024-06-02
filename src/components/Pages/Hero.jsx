@@ -1,6 +1,8 @@
 import InputBuilder from './InputBuilder'
 import heroImage from '../../assets/undraw_hero.svg'
+import { useGLobalContext } from '../../context'
 const Hero = () => {
+  const {mode} = useGLobalContext()
   return (
     <section id="home">
       <div className="lg:flex items-center containerWidth">
@@ -13,7 +15,13 @@ const Hero = () => {
             Thousands of jobs here, find your new job today, new job postings
             today!
           </p>
-          <form className="w-full lg:h-12 gap-4 shadow-lg shadow-slate-200 bg-white py-2 rounded-md lg:rounded-2xl px-2 text-sm grid grid-cols-1 lg:grid-cols-3 items-center">
+          <form
+            className={
+              mode
+                ? 'shadow-slate-800 w-full lg:h-12 gap-4 shadow-lg bg-white py-2 rounded-md lg:rounded-2xl px-2 text-sm grid grid-cols-1 lg:grid-cols-3 items-center'
+                : 'w-full lg:h-12 gap-4 shadow-lg shadow-slate-200 bg-white py-2 rounded-md lg:rounded-2xl px-2 text-sm grid grid-cols-1 lg:grid-cols-3 items-center'
+            }
+          >
             <InputBuilder property="Job title or keyword" />
             <InputBuilder property="Region e.g New York, USA." />
             <button

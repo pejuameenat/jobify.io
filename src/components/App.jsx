@@ -5,14 +5,15 @@ import Companies from './JobCategory'
 import TestimonySection from './TestimonySec'
 import Footer from './Footer'
 import Modal from './Modal'
+import { useGLobalContext } from '../context'
 
-const App = (props) => {
-  console.log(props);
+const App = () => {
+  const {mode} = useGLobalContext()
   return (
     <div
       className={
-        
-          // 'text-white  bg-gradient-to-r from-blue-950 from-5% to-neutral-950 via-blue-950 '
+        mode?
+           'text-white  bg-slate-900 ':
            'app bg-gradient-to-r from-orange-50 from-5% via-neutral-100 to-neutral-50'
       }
     >

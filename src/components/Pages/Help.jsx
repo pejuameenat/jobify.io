@@ -1,10 +1,12 @@
 import { useGLobalContext } from '../../context'
 import helpImg from '../../assets/undraw_support.svg'
 const Help = () => {
-  const { help } = useGLobalContext()
+  const { help, mode } = useGLobalContext()
   return (
-    <section className="py-14" id="help">
-      <h3 className="titleHead text-center text-2xl">
+    <section id="help" className="py-14">
+      <h3
+        className={'titleHead text-center text-2xl'}
+      >
         We are always happy to help with anything!
       </h3>
       <div className="containerWidth lg:grid grid-cols-2 gap-10 items-center">
@@ -19,8 +21,16 @@ const Help = () => {
                   {item.img}
                 </span>
                 <div>
-                  <h5 className="titleHead">{item.title}</h5>
-                  <p className="text-blue-950 text-sm font-light py-2">
+                  <h5 className={ 'titleHead'}>
+                    {item.title}
+                  </h5>
+                  <p
+                    className={
+                      mode
+                        ? 'text-slate-300'
+                        : 'text-blue-950 text-sm font-light py-2'
+                    }
+                  >
                     {item.info}
                   </p>
                 </div>

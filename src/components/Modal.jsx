@@ -1,16 +1,20 @@
-import { useGLobalContext } from "../context"
+import { useGLobalContext } from '../context'
 
 const Modal = () => {
-  const {showModal, setShowModal} = useGLobalContext()
+  const { showModal, closeModalFunc, mode } = useGLobalContext()
   return (
     <section
       className={showModal ? 'fixed inset-y-0 inset-x-0 overlay' : 'hidden'}
+      onClick={closeModalFunc}
     >
-      <div className="rounded-sm  bg-slate-100 max-w-xl p-5 mx-auto relative inset-y-14 smoothTransition">
-        <button
-          className="float-right text-xl"
-          onClick={() => setShowModal(false)}
-        >
+      <div
+        className={
+          mode
+            ? 'text-slate-800 rounded-sm  bg-slate-100 max-w-xl p-5 mx-auto relative inset-y-14 smoothTransition '
+            : 'rounded-sm  bg-slate-100 max-w-xl p-5 mx-auto relative inset-y-14 smoothTransition'
+        }
+      >
+        <button className="float-right text-xl" onClick={closeModalFunc}>
           &times;
         </button>
         <h2 className="titleHead text-3xl leading-relaxed">

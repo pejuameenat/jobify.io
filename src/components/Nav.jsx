@@ -2,7 +2,7 @@ import { FaBars } from 'react-icons/fa'
 import { ToggleOff, ToggleOn } from '@mui/icons-material'
 import { useGLobalContext } from '../context'
 const Nav = () => {
-  const { navList, modalFunc, menuBar, setMenuBar, mode, setMode } =
+  const { navList, openModalFunc, menuBar, setMenuBar, mode, setMode } =
     useGLobalContext()
   return (
     <nav className="py-3 flex lg:gap-20 flex-col justify-between lg:items-center lg:flex-row">
@@ -48,7 +48,7 @@ const Nav = () => {
           <button
             type="button"
             className="orangeButtons mx-0 lg:ml-auto hoverState"
-            onClick={modalFunc}
+            onClick={openModalFunc}
           >
             Login
           </button>
