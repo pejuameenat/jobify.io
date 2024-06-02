@@ -22,7 +22,7 @@ const AppContext = ({ children }) => {
   const [mode, setMode] = useState(false)
 
   const toggleLike = (id) => {
-    id !== currentItem ? setCurrentItem(id) : setLike((prev) => !prev)
+    id !== currentItem ? setCurrentItem(id) : setLike((prevLike) => !prevLike)
   }
   const openModalFunc = () => setShowModal(true)
   const closeModalFunc = () => setShowModal(false)

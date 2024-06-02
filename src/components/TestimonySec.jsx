@@ -5,11 +5,11 @@ const TestimonySection = () => {
     <section id="post a job">
       <div className="containerWidth py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-5 items-center">
-          <div className=" w-96 h-80 p-3 mx-auto border border-orange-300 rounded-lg">
+          <div className=" w-96 h-80 p-3 max-w-full mx-auto border border-orange-300 rounded-lg">
             <img
               src={womanSmiling}
               className="h-full object-cover"
-              alt="A smiling woman"
+              alt="image of a smiling woman"
             />
           </div>
           <article className="text-center lg:text-left">

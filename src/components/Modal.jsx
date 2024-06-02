@@ -5,7 +5,6 @@ const Modal = () => {
   return (
     <section
       className={showModal ? 'fixed inset-y-0 inset-x-0 overlay' : 'hidden'}
-      onClick={closeModalFunc}
     >
       <div
         className={
