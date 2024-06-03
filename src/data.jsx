@@ -5,12 +5,17 @@ import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined'
 import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined'
 import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined'
 import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined'
+// import PinterestIcon from '@mui/icons-material/Pinterest';
+
 import {
   Instagram,
   Google,
   // Favorite,
   LocationOn,
   LocalAtm,
+  Pinterest,
+AssuredWorkload  
+
 } from '@mui/icons-material'
 import img1 from './assets/team0.jpg'
 import img2 from './assets/team2.jpg'
@@ -99,7 +104,7 @@ export const offerFullTime = [
   {
     id: 2,
     title: 'Graphic Designer',
-    icon: '',
+    icon: <Pinterest/>,
     span: 'ACD Limited',
     cashIcon: <LocalAtm />,
     contact: '123-456-789-0 /Monthly',
@@ -124,7 +129,7 @@ export const offerFullTime = [
   },
   {
     id: 4,
-    icon: '',
+    icon: <AssuredWorkload  />,
     title: 'Web Developer',
     span: 'ACD Limited',
     cashIcon: <LocalAtm />,
