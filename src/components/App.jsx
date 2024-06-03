@@ -14,7 +14,7 @@ const App = () => {
       className={
         mode?
            'text-white  bg-slate-900 ':
-           'app bg-gradient-to-r from-orange-50 from-5% via-neutral-100 to-neutral-50'
+           'app gradient'
       }
     >
       <Nav />

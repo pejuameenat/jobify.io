@@ -4,8 +4,9 @@ import { useGLobalContext } from '../context'
 const Nav = () => {
   const { navList, openModalFunc, menuBar, setMenuBar, mode, setMode } =
     useGLobalContext()
+
   return (
-    <nav className="sticky py-1 flex lg:gap-20 flex-col justify-between lg:items-center lg:flex-row">
+    <nav className={mode ? 'bg-inherit navContainer' : 'gradient navContainer'}>
       <div className="flex justify-between px-3">
         <a href="#home" className="titleHead text-4xl">
           Jobi<span className="text-orange-600">fy</span>
@@ -13,7 +14,7 @@ const Nav = () => {
         <div className="flex items-center gap-3">
           <button
             type="button"
-            className="smoothTransition lg:justify-self-end"
+            className="smoothTransition lg:fixed right-40"
             onClick={() => setMode((prevMode) => !prevMode)}
           >
             {mode ? <ToggleOff /> : <ToggleOn />}
@@ -26,7 +27,7 @@ const Nav = () => {
           </button>
         </div>
       </div>
-      {/* nav center absolute top-14 w-full relative */}
+      {/* nav center*/}
       <div
         className={
           menuBar ? 'grow h-auto' : 'grow overflow-hidden h-0 lg:h-auto'
@@ -34,14 +35,14 @@ const Nav = () => {
       >
         <ul
           className={
-            'p-4 bg-white lg:bg-transparent  h-fit sm:shadow-xl lg:shadow-none lg:flex gap-4 lg:flex-row items-center smoothTransition'
+            'px-2 bg-white lg:bg-transparent h-fit sm:shadow-xl lg:shadow-none lg:flex gap-4 lg:flex-row items-center smoothTransition bg-inherit'
           }
         >
           {navList.map((item) => (
-            <li key={item.id} className="p-1">
+            <li key={item.id} className="px-1">
               <a
                 href={item.href}
-                className="relative transition duration-500 ease-in navLink"
+                className="relative smoothTransition ease-in navLink"
               >
                 {item.list}
               </a>

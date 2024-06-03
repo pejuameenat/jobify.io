@@ -4,7 +4,11 @@ const Modal = () => {
   const { showModal, closeModalFunc, mode } = useGLobalContext()
   return (
     <section
-      className={showModal ? 'fixed inset-y-0 inset-x-0 overlay' : 'hidden'}
+      className={
+        showModal
+          ? 'fixed inset-y-0 inset-x-0 overlay'
+          : 'hidden'
+      }
     >
       <div
         className={

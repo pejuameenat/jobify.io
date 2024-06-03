@@ -8,6 +8,9 @@
     .titleHead {
         @apply text-blue-950 font-bold
     }
+    .navContainer{
+        @apply sticky top-0 z-50 py-2 lg:py-0 shadow-lg flex lg:gap-20 flex-col justify-between lg:items-center lg:flex-row
+    }
     .containerWidth {
         @apply w-full max-w-full mx-auto lg:max-w-7xl lg:w-10/12 px-2 lg:px-0
     }
@@ -26,6 +29,9 @@
 
     .orangeButtons {
         @apply block mx-auto bg-orange-600 p-2 my-4 shadow-lg shadow-orange-500 text-white rounded-lg font-medium lg:mx-0 w-28
+    }
+    .gradient{
+        @apply bg-gradient-to-r from-orange-50 from-5% via-neutral-100 to-neutral-50
     }
     .smoothTransition{
     @apply duration-500 transition
@@ -95,6 +101,6 @@ body {
     transition: all 0.5s;
 }
 
-.spect {
+/* .spect {
     border: 2px solid red;
-}
+} */
