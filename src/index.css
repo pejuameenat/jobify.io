@@ -81,7 +81,7 @@ body {
 .navLink::before {
     content: '';
     position: absolute;
-    top: 1.5rem;
+    top: 1.2rem;
     left: 0;
     right: 0;
     width: 0%;
@@ -93,6 +93,10 @@ body {
 .navLink:hover::before {
     width: 100%;
 }
+ 
+.active-btn {
+     box-shadow: 0px 3px #ea580c;
+ }
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);

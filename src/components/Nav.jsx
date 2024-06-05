@@ -1,9 +1,14 @@
+import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { ToggleOff, ToggleOn } from '@mui/icons-material'
 import { useGLobalContext } from '../context'
 const Nav = () => {
   const { navList, openModalFunc, menuBar, setMenuBar, mode, setMode } =
     useGLobalContext()
+  const [currentTab, setCurrentTab] = useState(0)
+  const currentTabFunc = (id) => {
+    id !== currentTab ? setCurrentTab(id) : id
+  }
 
   return (
     <nav className={mode ? 'bg-inherit navContainer' : 'gradient navContainer'}>
@@ -14,9 +19,10 @@ const Nav = () => {
         <div className="flex items-center gap-3">
           <button
             type="button"
-            className="smoothTransition lg:fixed right-40"
+            className="smoothTransition font-bold lg:fixed right-40"
             onClick={() => setMode((prevMode) => !prevMode)}
           >
+            {mode ? 'Light mode' : 'Dark mode'}
             {mode ? <ToggleOff /> : <ToggleOn />}
           </button>
           <button
@@ -39,10 +45,18 @@ const Nav = () => {
           }
         >
           {navList.map((item) => (
-            <li key={item.id} className="px-1">
+            <li
+              key={item.id}
+              className="px-1"
+              onClick={() => currentTabFunc(item.id)}
+            >
               <a
                 href={item.href}
-                className="relative smoothTransition ease-in navLink"
+                className={
+                  item.id !== currentTab
+                    ? 'relative smoothTransition ease-in navLink'
+                    : 'relative smoothTransition ease-in navLink active-btn'
+                }
               >
                 {item.list}
               </a>

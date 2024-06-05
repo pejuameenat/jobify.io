@@ -13,7 +13,7 @@ const App = () => {
     <div
       className={
         mode?
-           'text-white  bg-slate-900 ':
+           'text-white  bg-slate-900':
            'app gradient'
       }
     >
