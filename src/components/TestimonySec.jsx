@@ -9,7 +9,7 @@ const TestimonySection = () => {
             <img
               src={womanSmiling}
               className="h-full object-cover"
-              alt="image of a smiling woman"
+              alt="image of a confident smiling woman in a denim shirt showing a hand sign of ok"
             />
           </div>
           <article className="text-center lg:text-left">
