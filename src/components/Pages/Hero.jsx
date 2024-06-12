@@ -7,9 +7,12 @@ const Hero = () => {
     <section id="home">
       <div className="lg:flex items-center containerWidth">
         <header className="py-6 text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl titleHead">
-            Find Your <span className="text-orange-500">Dream Job </span>Now
-            it's Easy.
+          <h1 className="   text-4xl lg:text-5xl titleHead">
+            Find Your{' '}
+            <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-transparent bg-clip-text">
+              Dream Job{' '}
+            </span>
+            Now it's Easy.
           </h1>
           <p className="py-4">
             Thousands of jobs here, find your new job today, new job postings

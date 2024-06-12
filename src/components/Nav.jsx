@@ -11,10 +11,13 @@ const Nav = () => {
   }
 
   return (
-    <nav className={mode ? 'bg-inherit navContainer' : 'gradient navContainer spect'}>
+    <nav className={mode ? 'bg-inherit navContainer' : 'gradient navContainer'}>
       <div className="flex justify-between px-3">
         <a href="#home" className="titleHead text-4xl">
-          Jobi<span className="text-orange-600">fy</span>
+          Jobi
+          <span className="bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">
+            fy
+          </span>
         </a>
         <div className="flex items-center gap-3">
           <button
