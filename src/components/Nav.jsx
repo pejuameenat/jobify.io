@@ -44,7 +44,7 @@ const Nav = () => {
       >
         <ul
           className={
-            'px-2 bg-white lg:bg-transparent h-fit sm:shadow-xl lg:shadow-none lg:flex gap-4 lg:flex-row items-center smoothTransition bg-inherit'
+            'px-2 fixed w-full z-10 bg-white lg:bg-transparent h-fit sm:shadow-xl lg:shadow-none lg:flex gap-4 lg:flex-row items-center smoothTransition bg-inherit sticky'
           }
         >
           {navList.map((item) => (
