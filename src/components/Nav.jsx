@@ -23,7 +23,7 @@ const Nav = () => {
           <button
             type="button"
             className="smoothTransition font-bold lg:fixed right-40"
-            onClick={() => setMode((prevMode) => !prevMode)}
+            onClick={() => setMode((prevMode) => console.log('clicked'))}
           >
             {mode ? 'Light mode' : 'Dark mode'}
             {mode ? <ToggleOff /> : <ToggleOn />}
