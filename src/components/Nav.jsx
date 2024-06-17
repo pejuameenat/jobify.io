@@ -20,10 +20,11 @@ const Nav = () => {
           </span>
         </a>
         <div className="flex items-center gap-3">
+          {/* BUG */}
           <button
             type="button"
-            className="smoothTransition font-bold lg:fixed right-40"
-            onClick={() => setMode((prevMode) => console.log('clicked'))}
+            className="smoothTransition font-bold  lg:absolute right-40 spect"
+            onClick={() => setMode((prevMode) => !prevMode)}
           >
             {mode ? 'Light mode' : 'Dark mode'}
             {mode ? <ToggleOff /> : <ToggleOn />}
