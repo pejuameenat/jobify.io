@@ -23,7 +23,7 @@ const Nav = () => {
           {/* BUG */}
           <button
             type="button"
-            className="smoothTransition font-bold  lg:absolute right-40 spect"
+            className="smoothTransition font-bold lg:absolute right-40 spect"
             onClick={() => setMode((prevMode) => !prevMode)}
           >
             {mode ? 'Light mode' : 'Dark mode'}
