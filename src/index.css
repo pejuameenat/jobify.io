@@ -20,7 +20,7 @@
     }
 
     .offerFlex {
-        @apply flex items-center gap-3
+        @apply flex items-center gap-2
     }
 
     .likeButton {
@@ -104,7 +104,9 @@ body {
     z-index: 100;
     transition: all 0.5s;
 }
-
 .spect {
     border: 2px solid red;
 }
+.spect1 {
+    border: 2px solid green;
+} 

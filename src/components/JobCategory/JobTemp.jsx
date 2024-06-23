@@ -19,15 +19,15 @@ const JobTemp = ({
     <div
       className={
         mode
-          ? `border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-slate-800 text-center lg:text-left spect`
-          : `border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-gray-200 text-center lg:text-left spect`
+          ? `border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-slate-800 text-center`
+          : `border ${borderColor} rounded-md py-7 px-3 shadow-xl shadow-gray-200 text-center`
       }
     >
-      <span className="block">{icon}</span>
+      <span className="">{icon}</span>
       <h4 className="titleHead lg:text-center">{title}</h4>
       <em className="block text-sm lg:text-center">{span}</em>
       <span className="block text-sm lg:text-center">{schedule}</span>
-      <div className="offerFlex py-2 justify-center">
+      <div className="offerFlex py-1 justify-center lg:justify-normal">
         <span className="text-gray-400">{cashIcon}</span>
         <p>{contact}</p>
       </div>

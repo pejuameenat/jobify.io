@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { ToggleOff, ToggleOn } from '@mui/icons-material'
 import { useGLobalContext } from '../context'
+import {memo} from 'react'
 const Nav = () => {
   const { navList, openModalFunc, menuBar, setMenuBar, mode, setMode } =
     useGLobalContext()
@@ -12,18 +13,19 @@ const Nav = () => {
 
   return (
     <nav className={mode ? 'bg-inherit navContainer' : 'gradient navContainer'}>
-      <div className="flex justify-between px-3">
+      <div className="flex justify-between px-3 spect1">
         <a href="#home" className="titleHead text-4xl">
           Jobi
           <span className="bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">
             fy
           </span>
         </a>
-        <div className="flex items-center gap-3">
+        {/* secod child */}
+        <div className="flex lg:mr-auto items-center gap-3">
           {/* BUG */}
           <button
             type="button"
-            className="smoothTransition font-bold lg:absolute right-40 spect"
+            className="smoothTransition font-bold spect"
             onClick={() => setMode((prevMode) => !prevMode)}
           >
             {mode ? 'Light mode' : 'Dark mode'}
@@ -36,22 +38,25 @@ const Nav = () => {
             <FaBars className="lg:hidden" />
           </button>
         </div>
+        {/*  */}
       </div>
       {/* nav center*/}
       <div
         className={
-          menuBar ? 'grow h-auto' : 'grow overflow-hidden h-0 lg:h-auto'
+          menuBar
+            ? 'grow h-auto'
+            : 'grow overflow-hidden h-0 lg:h-auto'
         }
       >
         <ul
           className={
-            'px-2 fixed w-full z-10 bg-white lg:bg-transparent h-fit sm:shadow-xl lg:shadow-none lg:flex gap-4 lg:flex-row items-center smoothTransition bg-inherit sticky'
+            'p-2 w-full z-2 bg-white lg:bg-transparent h-fit sm:shadow-xl lg:py-0 lg:shadow-none lg:flex gap-4 lg:flex-row items-center bg-inherit lg:sticky'
           }
         >
           {navList.map((item) => (
             <li
               key={item.id}
-              className="px-1"
+              className="px-1 text-slate-900 lg:text-inherit"
               onClick={() => currentTabFunc(item.id)}
             >
               <a
@@ -80,4 +85,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default memo(Nav)
