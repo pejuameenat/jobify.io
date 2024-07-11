@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { ToggleOff, ToggleOn } from '@mui/icons-material'
 import { useGLobalContext } from '../context'
-import {memo} from 'react'
+import { memo } from 'react'
 const Nav = () => {
   const { navList, openModalFunc, menuBar, setMenuBar, mode, setMode } =
     useGLobalContext()
@@ -13,7 +13,7 @@ const Nav = () => {
 
   return (
     <nav className={mode ? 'bg-inherit navContainer' : 'gradient navContainer'}>
-      <div className="flex justify-between px-3 spect1">
+      <div className="flex justify-between px-3">
         <a href="#home" className="titleHead text-4xl">
           Jobi
           <span className="bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">
@@ -25,7 +25,7 @@ const Nav = () => {
           {/* BUG */}
           <button
             type="button"
-            className="smoothTransition font-bold spect"
+            className="smoothTransition font-bold lg:absolute right-40 z-50"
             onClick={() => setMode((prevMode) => !prevMode)}
           >
             {mode ? 'Light mode' : 'Dark mode'}
@@ -38,7 +38,7 @@ const Nav = () => {
             <FaBars className="lg:hidden" />
           </button>
         </div>
-        {/*  */}
+        {/* e */}
       </div>
       {/* nav center*/}
       <div
@@ -50,7 +50,7 @@ const Nav = () => {
       >
         <ul
           className={
-            'p-2 w-full z-2 bg-white lg:bg-transparent h-fit sm:shadow-xl lg:py-0 lg:shadow-none lg:flex gap-4 lg:flex-row items-center bg-inherit lg:sticky'
+            'p-2 w-full bg-white lg:bg-transparent h-fit sm:shadow-xl lg:py-0 lg:shadow-none lg:flex gap-4 lg:flex-row items-center bg-inherit lg:sticky'
           }
         >
           {navList.map((item) => (
@@ -71,7 +71,7 @@ const Nav = () => {
               </a>
             </li>
           ))}
-
+         
           <button
             type="button"
             className="orangeButtons mx-0 lg:ml-auto hoverState"
