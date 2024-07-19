@@ -10,7 +10,6 @@ import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined'
 import {
   Instagram,
   Google,
-  // Favorite,
   LocationOn,
   LocalAtm,
   Pinterest,
@@ -25,7 +24,7 @@ export const navList = [
   { id: 1, list: 'Home', href: '#home' },
   { id: 2, list: 'About', href: '#about' },
   { id: 3, list: 'Contact', href: '#help' },
-  { id: 4, list: 'Category', href: '#category' },
+  { id: 4, list: 'Saved jobs', href: '#category' },
   { id: 5, list: 'Post a job', href: '#post a job' },
 ]
 

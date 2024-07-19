@@ -22,7 +22,6 @@ const Nav = () => {
         </a>
         {/* secod child */}
         <div className="flex lg:mr-auto items-center gap-3">
-          {/* BUG */}
           <button
             type="button"
             className="smoothTransition font-bold lg:absolute right-40 z-50"
@@ -44,13 +43,14 @@ const Nav = () => {
       <div
         className={
           menuBar
-            ? 'grow h-auto'
-            : 'grow overflow-hidden h-0 lg:h-auto'
+            ? 'grow h-auto smoothTransition'
+            : 'grow overflow-hidden h-0 sm:relative lg:h-auto smoothTransition'
         }
       >
         <ul
+          id="mobile-nav-list"
           className={
-            'p-2 w-full bg-white lg:bg-transparent h-fit sm:shadow-xl lg:py-0 lg:shadow-none lg:flex gap-4 lg:flex-row items-center bg-inherit lg:sticky'
+            'p-2 w-full bg-white lg:bg-transparent h-fit sm:shadow-xl lg:py-0 lg:shadow-none lg:flex gap-4 lg:flex-row items-center bg-inherit'
           }
         >
           {navList.map((item) => (
@@ -71,7 +71,7 @@ const Nav = () => {
               </a>
             </li>
           ))}
-         
+
           <button
             type="button"
             className="orangeButtons mx-0 lg:ml-auto hoverState"

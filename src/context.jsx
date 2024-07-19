@@ -10,7 +10,6 @@ import {
 } from './data'
 //create context
 const GLobalContext = createContext()
-console.log(GLobalContext);
 //create custom hook and invoke useContext hook
 export const useGLobalContext = () => useContext(GLobalContext)
 const AppContext = ({ children }) => {

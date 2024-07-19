@@ -8,9 +8,11 @@
     .titleHead {
         @apply text-blue-950 font-bold
     }
-    .navContainer{
-        @apply sticky top-0 z-50 py-2 lg:py-0 shadow-lg flex lg:gap-20 flex-col justify-between lg:items-center lg:flex-row
+
+    .navContainer {
+        @apply sticky top-0 z-20 py-2 lg:py-0 shadow-lg flex lg:gap-20 flex-col justify-between lg:items-center lg:flex-row
     }
+
     .containerWidth {
         @apply w-full max-w-full mx-auto lg:max-w-7xl lg:w-10/12 px-2 lg:px-0
     }
@@ -30,12 +32,15 @@
     .orangeButtons {
         @apply block mx-auto bg-orange-600 p-2 my-4 shadow-lg shadow-orange-500 text-white rounded-lg font-medium lg:mx-0 w-28
     }
-    .gradient{
+
+    .gradient {
         @apply bg-gradient-to-r from-orange-50 from-5% via-neutral-100 to-neutral-50
     }
-    .smoothTransition{
-    @apply duration-500 transition
+
+    .smoothTransition {
+        @apply duration-500 transition
     }
+
     .hoverState {
         @apply hover:scale-110 smoothTransition
     }
@@ -93,10 +98,10 @@ body {
 .navLink:hover::before {
     width: 100%;
 }
- 
+
 .active-btn {
-     box-shadow: 0px 3px #ea580c;
- }
+    box-shadow: 0px 3px #ea580c;
+}
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -104,4 +109,12 @@ body {
     z-index: 100;
     transition: all 0.5s;
 }
- 
+
+@media only screen and (max-width:768px) {
+    #mobile-nav-list {
+        position: absolute;
+        inset: 10px, 0px 0px;
+        z-index: 10;
+    }
+
+}
