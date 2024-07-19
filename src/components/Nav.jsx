@@ -10,7 +10,10 @@ const Nav = () => {
   const currentTabFunc = (id) => {
     id !== currentTab ? setCurrentTab(id) : id
   }
-
+const closeNavbarAndOpenModal = () => {
+  openModalFunc()
+  setMenuBar(false)
+}
   return (
     <nav className={mode ? 'bg-inherit navContainer' : 'gradient navContainer'}>
       <div className="flex justify-between px-3">
@@ -75,7 +78,7 @@ const Nav = () => {
           <button
             type="button"
             className="orangeButtons mx-0 lg:ml-auto hoverState"
-            onClick={openModalFunc}
+            onClick={closeNavbarAndOpenModal}
           >
             Login
           </button>
