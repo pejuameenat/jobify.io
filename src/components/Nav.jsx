@@ -23,7 +23,7 @@ const closeNavbarAndOpenModal = () => {
             fy
           </span>
         </a>
-        {/* secod child */}
+        {/* second child */}
         <div className="flex lg:mr-auto items-center gap-3">
           <button
             type="button"
