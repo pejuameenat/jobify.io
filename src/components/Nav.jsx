@@ -40,7 +40,6 @@ const closeNavbarAndOpenModal = () => {
             <FaBars className="lg:hidden" />
           </button>
         </div>
-        {/* e */}
       </div>
       {/* nav center*/}
       <div
